@@ -1,4 +1,4 @@
-use tera::{ Tera, Context, Result };
+use tera::{Context, Result, Tera};
 
 pub struct Templates {
     tera: Tera,
