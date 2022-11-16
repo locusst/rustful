@@ -1,6 +1,6 @@
 use super::template::Templates;
-use super::{ Site, Page };
-use comrak::{ markdown_to_html, ComrakOptions };
+use super::{Page, Site};
+use comrak::{markdown_to_html, ComrakOptions};
 
 struct FrontMatter {
     title: String,
