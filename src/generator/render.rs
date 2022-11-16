@@ -1,4 +1,4 @@
-use super::template::{ Templates };
+use super::template::Templates;
 use super::{ Site, Page };
 use comrak::{ markdown_to_html, ComrakOptions };
 
