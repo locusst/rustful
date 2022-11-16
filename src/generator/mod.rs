@@ -1,7 +1,7 @@
-pub mod template;
 pub mod render;
+pub mod template;
 
-use serde::{ Serialize, Deserialize };
+use serde::{Deserialize, Serialize};
 
 use self::template::Templates;
 
@@ -51,10 +51,8 @@ impl Site {
         for path in assets {
             let path = path.unwrap();
             let path_str = path.to_str().unwrap();
-            let path_str = path_str.replace(
-                &format!("{}/assets", source),
-                &format!("{}/assets", output)
-            );
+            let path_str =
+                path_str.replace(&format!("{}/assets", source), &format!("{}/assets", output));
             if path.is_dir() {
                 std::fs::create_dir_all(path_str).unwrap();
             } else {
