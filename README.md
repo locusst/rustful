@@ -43,3 +43,11 @@ author: John Doe
 
 # My Post
 ```
+
+## Templates
+
+Templates are located in source/templates and use Tera (jinja2-like) syntax.
+
+## Assets
+
+Assets are located in source/assets and are copied to the output directory.
